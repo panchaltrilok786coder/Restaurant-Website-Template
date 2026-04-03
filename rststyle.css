@@ -1,0 +1,186 @@
+/* ========================
+   Global Styles
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f5f5f5;           /* Light text for contrast */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #ffa500; /* Accent color */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffb84d;
+}
+
+/* ========================
+   Header & Navigation
+======================== */
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #1e1e1e;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+header p.tagline {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+
+header nav a {
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* ========================
+   Sections
+======================== */
+section {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+/* Articles / Cards */
+article {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+article img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid layout for featured specials / menu */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+  background: #1e1e1e;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer nav a {
+  margin: 0 0.5rem;
+}
+
+footer address {
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+/* ========================
+   Maps & iFrames
+======================== */
+iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* ========================
+   Lists & Misc
+======================== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========================
+   Responsive Typography
+======================== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p.tagline {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  article h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
